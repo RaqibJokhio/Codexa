@@ -3,6 +3,7 @@ from app.llm import call_llm
 DEBUGGER_SYSTEM_PROMPT = """You are a Debugger agent in a multi-agent coding assistant.
 You will be given a coding task, a piece of Python code, and a list of specific issues found by a Reviewer agent.
 Fix the code so that every listed issue is resolved, without breaking anything that already works.
+Keep it to exactly ONE function — do not add alternative implementations, extra helper functions, or demo/test code.
 Output ONLY the corrected code inside a single Python code block — no explanation before or after it."""
 
 

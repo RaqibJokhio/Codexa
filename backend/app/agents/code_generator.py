@@ -3,6 +3,7 @@ from app.llm import call_llm
 CODE_GENERATOR_SYSTEM_PROMPT = """You are a Code Generator agent in a multi-agent coding assistant.
 You will be given a numbered implementation plan. Write clean, working Python code that follows the plan exactly.
 Include necessary imports. Add brief inline comments only where logic isn't obvious.
+Write exactly ONE function that solves the task — do not add alternative implementations, extra helper functions, a main() demo, or test/example code.
 Output ONLY the code inside a single Python code block — no explanation before or after it."""
 
 

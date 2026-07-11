@@ -3,7 +3,7 @@ import axios from "axios";
 import { ListTree, Code2, ShieldCheck, Wrench, CheckCircle2, XCircle, Loader2 } from "lucide-react";
 import "./index.css";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://codexa-backend-kzxy.onrender.com";
 
 const STAGES = [
   { key: "planner", label: "Planner", desc: "Breaking the task into steps", icon: ListTree },
